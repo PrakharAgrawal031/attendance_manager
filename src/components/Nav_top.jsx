@@ -5,6 +5,8 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const d = new Date();
 const month = months[d.getMonth()];
     return(
-        <div></div>
+        <div className=" mt-3 flex  justify-center">
+            <p>{month} {d.getDate()}, {d.getFullYear()}</p>
+        </div>
     )
 }
