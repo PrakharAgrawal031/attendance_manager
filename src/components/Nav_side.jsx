@@ -11,14 +11,14 @@ export default function Nav_side() {
   ]
   return (
     <div
-      className={` ${open ? "w-60 pt-4" : "w-12 pt-3" } p-3  nav-h rounded-md m-1 duration-200 bg-[#0C1020] relative`}
+      className={` ${open ? "w-60 pt-4" : "w-12 pt-3" } pt-3 p-1  nav-h rounded-md m-1 duration-200 bg-[#0C1020] relative`}
     >
-      <div className="flex gap-x-4 items-center">
+      <div className="flex gap-x-4 pl-2 items-center">
         <img
           src="./src/assets/logo.png"
-          className={`w-6 cursor-pointer duration-500`}
+          className={`w-6 cursor-pointer duration-500 ${!open && 'rotate-[360deg]'}`}
         />
-        <h1 className={`text-gray-200 origin-left font-medium text-lg duration-300 ${!open && "scale-0"}`}>Attendance-Manager</h1>
+        <h1 className={`text-gray-200 origin-left font-medium text-lg duration-200 ${!open && "scale-0"}`}>Attendance-Manager</h1>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Nav_side() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`w-5 h-5 text-gray-200 absolute cursor-pointer rounded-full -right-3 top-14 border-2 bg-[#0C1020] ${!open && 'rotate-180'}`}
+        className={`w-5 h-5 text-gray-200 absolute cursor-pointer rounded-full -right-3 top-16 border-2 bg-[#0C1020] ${!open && 'rotate-180'}`}
         onClick={() => setOpen(!open)}
       >
         <path
@@ -37,7 +37,7 @@ export default function Nav_side() {
       </svg>
       <ul className="pt-6">
         {Menus.map((menu,index)=>(
-          <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer ${open ? 'p-3' : 'p-0 pb-3'} hover:bg-gray-700 rounded-md ${menu.gap ? "mt-6" : "mt-2"}`}>
+          <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer ${open ? 'p-3' : 'p-2'} hover:bg-gray-700 rounded-md ${menu.gap ? "mt-8" : "mt-2"}`}>
             <img src={`${menu.src}`} className = {`w-6`}/>
             <span className={`${!open && 'hidden'} origin-left duration-300 `}>{menu.title}</span>
 
