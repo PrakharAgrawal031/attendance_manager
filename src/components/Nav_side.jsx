@@ -11,7 +11,7 @@ export default function Nav_side() {
   ]
   return (
     <div
-      className={` ${open ? "w-60 pt-4" : "w-12 pt-3" } pt-3 p-1  nav-h rounded-md m-1 duration-200 bg-[#0C1020] relative`}
+      className={` ${open ? "w-64 pt-4" : "w-12 pt-3" } pt-3 p-1  h-[99vh]  rounded-md m-1 duration-200 bg-[#0C1020] relative`}
     >
       <div className="flex gap-x-4 pl-2 items-center">
         <img
@@ -37,7 +37,7 @@ export default function Nav_side() {
       </svg>
       <ul className="pt-6">
         {Menus.map((menu,index)=>(
-          <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer ${open ? 'p-3' : 'p-2'} hover:bg-gray-700 rounded-md ${menu.gap ? "mt-8" : "mt-2"}`}>
+          <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer ${open ? 'p-3' : 'p-2'} hover:bg-gray-700 rounded-full hover:rounded-md duration-75 ${menu.gap ? "mt-8" : "mt-2"}`}>
             <img src={`${menu.src}`} className = {`w-6`}/>
             <span className={`${!open && 'hidden'} origin-left duration-300 `}>{menu.title}</span>
 
