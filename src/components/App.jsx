@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="flex">
       <Nav_side />
-      <div className="">
+      <div className=" w-[95%] ">
         <Nav_top/>
       </div>
     </div>
