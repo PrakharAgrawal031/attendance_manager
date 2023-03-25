@@ -1,11 +1,13 @@
 import React from "react";
 
+//md:grid md:grid-cols-5 md:gap-x-[17rem]
+
 const Card = (props) => {
   const list = props.list;
 
   console.log(props, list);
   return (
-    <div className="md:grid md:grid-cols-5 md:gap-x-[17rem] ">
+    <div className="md:flex md:flex-wrap">
       {list.map((lists) => (
         <div
           className="bg-[#d4d4d4] w-80 m-1.5 ml-[3.9rem] md:ml-28 mb-3 p-2 rounded-lg shadow-lg md:w-60 md:h-60 "

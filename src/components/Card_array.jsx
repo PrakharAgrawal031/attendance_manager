@@ -9,9 +9,11 @@ export default function Cards_array() {
     { subject: "TOC", attended: 4, total: 10, bunks: 1, need: "-", i: 4 },
     { subject: "OS", attended: 6, total: 10, bunks: 1, need: "-", i: 5 },
     { subject: "CC", attended: 9, total: 10, bunks: 1, need: "-", i: 6 },
+    { subject: "DM", attended: 9, total: 10, bunks: 1, need: "-", i: 7 },
+    { subject: "DE", attended: 9, total: 10, bunks: 1, need: "-", i: 8 },
   ]);
   return (
-    <div className="md:grid md:grid-cols-4 md:gap-4">
+    <div>
       <Card list={list}/>
     </div>
   );
