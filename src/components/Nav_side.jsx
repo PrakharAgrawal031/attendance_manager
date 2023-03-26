@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-//skdhfkashf
-
 export default function Nav_side() {
   const [open, setOpen] = useState(false);
   const Menus = [
