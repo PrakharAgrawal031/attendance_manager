@@ -1,7 +1,7 @@
 {
   "homepage": "http://PrakharAgrawal031.github.io/attendance_manager",
   "name": "attendance-manager",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
